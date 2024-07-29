@@ -1,0 +1,45 @@
+{
+  "short_name": "Wingo PWA",
+  "name": "Wingo PWA",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "/images/pwa-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "url_handlers": [
+    {
+      "origin": "https://pwa-plinsters.onrender.com"
+    },
+    {
+      "origin": "https://1xlite-567488.top"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
