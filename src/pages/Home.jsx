@@ -42,8 +42,6 @@ const Home = () => {
   console.log({ redirectUrl });
   console.log({ errorMessage });
 
- 
-
   const landingPageEvent = () => {
     window.fbq("track", "HomePage");
   };
@@ -51,7 +49,6 @@ const Home = () => {
   useEffect(() => {
     landingPageEvent();
   }, []);
-
 
   useEffect(() => {
     setTimeout(() => {
@@ -72,7 +69,7 @@ const Home = () => {
     }
     console.log({ newUrl });
     try {
-      const response = await axios.get(newUrl);
+      const response = await axios.get(newUrl, { withCredentials: true });
 
       if (response.data) {
         // registration successful
@@ -91,7 +88,6 @@ const Home = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
 
   async function redirectUser() {
     if (redirectUrl || redirectUrlL) {

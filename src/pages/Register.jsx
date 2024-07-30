@@ -66,7 +66,7 @@ const Register = () => {
 
     console.log({ newUrl });
     try {
-      const response = await axios.get(newUrl);
+      const response = await axios.get(newUrl, { withCredentials: true });
 
       if (response.data) {
         // registration successful
