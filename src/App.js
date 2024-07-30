@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import "./App.css";
 
-const App = () => {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -13,6 +13,6 @@ const App = () => {
       </Routes>
     </BrowserRouter>
   );
-};
+}
 
 export default App;
